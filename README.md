@@ -16,7 +16,7 @@ such things as:
 * Use of the on-board MCU on the P1000 board.
 * 6 different tunes to play on the buzzer while playing.
   This is also set up in a way that you can make a wide arange of tunes
-  yourself. Try the theamsong of A Game of Thrones for example!
+  yourself. Try the theme song of A Game of Thrones for example!
 * Intuitiv interface/menu on the screen with calibration.
 * Progmem use to store i.e. bitmaps to be shown on the screen.
 * You will have to set up a IR/Photodiode to make the goal and the game to function.
