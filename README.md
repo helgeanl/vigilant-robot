@@ -3,9 +3,8 @@
 This project was developed as a term project in the course "Industrial and Embedded Computer Systems Design" TTK 4155.
 
 There are a lot of blood sweat and tears that went into this project. So treat
-it with the respect it deserves (read: Ctrl+C). We hope that others might find
-this usefull for others that are unfotunate enough to have stumbled into the
-field of cybernetics.
+it with the respect it deserves (read: Ctrl+C). We hope that others that are unfotunate enough to have stumbled into the
+field of cybernetics,  might find this usefull.
 
 No but all jokes aside. We really enjoyed this project and the code supports
 such things as:
@@ -19,7 +18,7 @@ such things as:
   This is also set up in a way that you can make a wide arange of tunes
   yourself. Try the theamsong of A Game of Thrones for example!
 * Intuitiv interface/menu on the screen with calibration.
-* Progmem use to store i.e. bitmaps to be shown on the screen. 
+* Progmem use to store i.e. bitmaps to be shown on the screen.
 * You will have to set up a IR/Photodiode to make the goal and the game to function.
 
 
