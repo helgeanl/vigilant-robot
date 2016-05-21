@@ -3,14 +3,14 @@
 This project was developed as a term project in the course "Industrial and Embedded Computer Systems Design" TTK 4155.
 
 There are a lot of blood sweat and tears that went into this project. So treat
-it with the respect it deserves (read: Ctrl+C). We hope that others that are unfotunate enough to have stumbled into the
+it with the respect it deserves (read: Ctrl+C). We hope that others that are unfortunate enough to have stumbled into the
 field of cybernetics,  might find this usefull.
 
 No but all jokes aside. We really enjoyed this project and the code supports
 such things as:
 
 * Ps2 controller
-  - Needs 5->3.3V signal converter, do NOT use a voltage devider as this
+  - Needs 5->3.3V signal converter, do NOT use a voltage divider as this
     fucks up and is unreliable. Here we use a bitbang method to communicate with it.
 * 3 MCU's on the CAN-bus implemented in a way that avoids flooding (timers).
 * Use of the on-board MCU on the P1000 board.
