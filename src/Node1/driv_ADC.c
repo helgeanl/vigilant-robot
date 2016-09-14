@@ -26,10 +26,6 @@ uint8_t adc_read(char ch){
 }
 
 void adc_init(void) {
-	//Enable the external memory interface/4 bits address
-	MCUCR |= (1<<SRE);
-	SFIOR |= (1<<XMM2);
-	
 	//Set the interrupt pin to input
 	GICR |= (1<<INT0); 		// External Interrupt Request 0 Enable
 	MCUCR |= (1<<ISC00)|(1<<ISC01); // The rising edge of INT0 generates an interrupt request.
