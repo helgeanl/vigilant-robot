@@ -9,6 +9,8 @@
 #include <stdio.h>
 #include "setup.h"
 
+static uint8_t adc_int_flag;
+
 /************************************************************************/
 /*                      Public functions                                */
 /************************************************************************/
@@ -18,7 +20,7 @@ uint8_t adc_read(char ch){
 	if(ch > 4) {return 0;} //Make sure ch not above 4
 	adc[0]=0x03+ch;
 	//Wait for the data to be read 
-	while(test_bit(PINE, PINE0));
+	while(!adc_int_flag);
 	return *adc;	
 }
 
@@ -28,5 +30,12 @@ void adc_init(void) {
 	SFIOR |= (1<<XMM2);
 	
 	//Set the interrupt pin to input
-	DDRE &= ~(1<<PINE0);
+	GICR |= (1<<INT0); 		// External Interrupt Request 0 Enable
+	MCUCR |= (1<<ISC00)|(1<<ISC01); // The rising edge of INT0 generates an interrupt request.
+	adc_int_flag = 0;
+}
+
+
+ISR(INT0_vect){
+	adc_int_flag = 1;
 }
