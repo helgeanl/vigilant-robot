@@ -1,6 +1,6 @@
 #Introduction
 #### Description
-This project was developed as a term project in the course TTK 4155 - Industrial and Embedded Computer Systems Design.
+This project was developed as a term project in the course TTK4155 - Industrial and Embedded Computer Systems Design.
 
 There are a lot of blood sweat and tears that went into this project. So treat
 it with the respect it deserves (read: Ctrl+C). We hope that others that are unfortunate enough to have stumbled into the
