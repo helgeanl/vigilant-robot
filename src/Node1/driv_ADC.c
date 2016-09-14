@@ -8,6 +8,7 @@
 #include <avr/io.h>
 #include <stdio.h>
 #include "setup.h"
+#include <avr/interrupt.h>
 
 static uint8_t adc_int_flag;
 
